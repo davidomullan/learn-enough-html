@@ -34,7 +34,7 @@ blockquote {
 .navbar {
 	padding: 20px 20px;
 	margin: 0px;
-	text-align: left;
+	text-align: right;
 	background-image: linear-gradient(to bottom, lightgray, red);
 }
 
@@ -42,6 +42,17 @@ blockquote {
 	display: inline;
 	text-decoration: none;
 	padding-right: 15px;
+}
+
+.navbar li a#resume {
+	border: 1px blue;
+	border-style: solid;
+	border-radius: 5px;
+	padding: 3px 4px;
+}
+.navbar li a#resume:hover{
+	border-color: white;
+	color: white;
 }
 
 .portrait {
@@ -53,4 +64,12 @@ blockquote {
 	display: inline-block;
 	padding: 10px;
 	margin: 10px;
+}
+
+.logoImage {
+	height: 200px;
+}
+
+.sampleOutput {
+	height: 200px;
 }
