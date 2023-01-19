@@ -1,23 +1,41 @@
-/*reset all*/
+/*
+reset all
+*/
 *{
 	margin: 0;
 	padding: 0;
 }
 
+/*
+Color Palette:
+https://colorhunt.co/palette/222831393e4600adb5eeeeee
+*/
+:root {
+	--primary: #222831;
+	--secondary: #393E46;
+	--accent: #00ADB5;
+	--background: #EEEEEE;
+}
+
 a:link {
 	text-decoration: none;
-	color: blue;
+	color: var(--primary);
 }
 a:visited {
 	text-decoration: none;
-	color: blue;
+	color: var(--primary);
 }
 a:hover {
-	color: red;
+	color: var(--accent);
 }
 a:active {
 	text-decoration: none;
-	color: blue;
+	color: var(--primary);
+}
+
+body {
+	background-color: var(--background); /* Light Blue */
+	color: var(--primary);
 }
 
 header {
@@ -28,14 +46,16 @@ header {
 blockquote {
 	margin: 10px 40px;
 	padding: 20px 20px;
-	background-image: linear-gradient(to bottom, lightgray, red);
+	background-color: var(--secondary);
+	color: var(--background);
 }
 
 .navbar {
 	padding: 20px 20px;
 	margin: 0px;
 	text-align: right;
-	background-image: linear-gradient(to bottom, lightgray, red);
+	background-color: var(--secondary);
+	color: var(--background);
 }
 
 .navbar li {
@@ -44,15 +64,31 @@ blockquote {
 	padding-right: 15px;
 }
 
+.navbar a:link {
+	text-decoration: none;
+	color: var(--background);
+}
+.navbar a:visited {
+	text-decoration: none;
+	color: var(--background);
+}
+.navbar a:hover {
+	color: var(--accent);
+}
+.navbar a:active {
+	text-decoration: none;
+	color: var(--background);
+}
+
 .navbar li a#resume {
-	border: 1px blue;
+	border: 1px white;
 	border-style: solid;
 	border-radius: 5px;
 	padding: 3px 4px;
 }
 .navbar li a#resume:hover{
-	border-color: white;
-	color: white;
+	border-color: var(--accent);
+	color: var(--accent);
 }
 
 .portrait {
